@@ -51,4 +51,6 @@ details.card summary{font-weight:700;cursor:pointer}details[open] summary{margin
 .links{display:flex;flex-wrap:wrap;gap:6px}.links a{background:var(--card2);color:var(--t);border-radius:14px;padding:6px 12px;font-size:13px;text-decoration:none}
 .days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:10px}.days span{background:var(--card2);border-radius:12px;padding:6px 2px;text-align:center;font-size:10px;line-height:1.2}.days b{display:block;font-size:12px}.days .now{background:var(--p)}
 .set button,.set .btn{display:block;width:100%;background:var(--card2);color:var(--t);border:0;border-radius:14px;padding:12px;margin-bottom:8px;font:inherit;font-size:14px;text-align:center}.set .danger{background:#4a1d1d;color:#ff9a8c}
-.ctl{justify-content:space-between}.ctl button{width:48px;height:48px;padding:0;border-radius:50%;font-size:18px;background:var(--card2)}.ctl #mpl{background:var(--p)}.ctl button.on{background:var(--a)}#ms{width:100%}
+.fbb{display:flex;gap:8px;margin-top:8px}.fbb button{flex:1;background:var(--card2);color:var(--t);border:0;border-radius:14px;padding:12px 4px;font:inherit;font-size:14px}
+#evoT p{margin-bottom:6px;font-size:14px}
+.gif{margin:8px 0}.gif img{width:100%;height:auto;display:block;border-radius:14px;background:var(--card2)}

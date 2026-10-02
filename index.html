@@ -26,21 +26,21 @@
   <div class="card ring"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32" class="rb"/><circle id="rf" cx="40" cy="40" r="32" class="rf"/></svg><span id="rn"></span><small>séances cette semaine</small></div>
   <div class="card water"><b id="wn">0</b><small id="wl"></small><button id="wadd">+ 1 verre (250 ml)</button></div>
  </div>
+ <div class="card"><b>Mon évolution</b><div id="evoT"></div></div>
  <div class="card"><b>Total</b><p id="total"></p></div>
- <details class="card"><summary>Réglages et sauvegarde</summary><div class="set"><button id="rs">Réinitialiser la séance du jour</button><button id="ex">Exporter une sauvegarde</button><label class="btn">Importer une sauvegarde<input id="im" type="file" accept=".json" hidden></label><button id="ra" class="danger">Tout réinitialiser</button></div></details>
+ <details class="card"><summary>Réinitialisation et sauvegarde</summary><div class="set"><button id="rs">Réinitialiser la séance du jour</button><button id="rp">Recommencer le programme (semaine 1)</button><button id="ex">Exporter une sauvegarde</button><label class="btn">Importer une sauvegarde<input id="im" type="file" accept=".json" hidden></label><button id="ra" class="danger">Tout réinitialiser</button></div></details>
 </section>
 <section id="seance" class="tab">
  <div class="seg" id="typeSeg"><button data-t="A" class="on">A · Jambes + abdos</button><button data-t="B">B · Corps entier</button></div>
- <label class="wk">Semaine <select id="week"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
- <div class="card music"><b>Mes musiques</b><p id="mt" class="mut">Appuie sur ▶ pour lancer</p><input id="ms" type="range" min="0" max="100" value="0" aria-label="Position"><div class="mrow ctl"><button id="m0" aria-label="Précédent">⏮</button><button id="mpl">▶</button><button id="m1" aria-label="Suivant">⏭</button><button id="mlo" aria-label="Répéter">🔁</button><button id="msh" aria-label="Aléatoire">🔀</button></div><div id="mlist2"></div><audio id="au" preload="none"></audio></div>
- <div class="card music"><b>Beat intégré et playlists</b>
+ <label class="wk">Semaine <select id="week"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label>
+ <div class="card music"><b>Musique d'entraînement</b>
   <div class="mrow"><button id="mp">▶ Beat</button><input id="bpm" type="range" min="110" max="170" value="130" aria-label="Tempo"><span id="bv">130 BPM</span></div>
   <div class="links"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=workout+motivation+music+mix">YouTube · Motivation</a><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=afrobeats+workout+mix">YouTube · Afrobeats</a><a target="_blank" rel="noopener" href="https://open.spotify.com/search/gym%20workout%20hits">Spotify · Gym hits</a></div></div>
  <details class="card" open><summary>Échauffement · 7 à 10 min</summary><div id="warm"></div></details>
  <div class="prog"><i id="pbar"></i></div>
  <div id="exos"></div>
- <details class="card" id="finD"><summary>Finisher cardio · 30 s effort, 30 s repos</summary><div id="fin"></div></details>
  <details class="card"><summary>Étirements · 5 à 8 min</summary><div id="stre"></div></details>
+ <div class="card" id="fb" hidden><b>Comment était la séance ?</b><div class="fbb"><button data-r="facile">Trop facile</button><button data-r="ok">Parfait</button><button data-r="dur">Trop dur</button></div></div>
  <button class="main" id="finish">Terminer la séance</button>
 </section>
 <section id="repas" class="tab"><div id="food"></div></section>
